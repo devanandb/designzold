@@ -1,4 +1,6 @@
-@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/bootstrap.less";
+@import "bower_components/uikit/themes/default/almost-flat/uikit.less";
+@import "bower_components/uikit/src/less/uikit-addons.less";
 //@import "bower_components/bootstrap/less/theme.less";
 @import "bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "bower_components/font-awesome/fonts";
@@ -21,3 +23,100 @@
 //		.translate(0,0);
 //	}
 //}
+
+body {
+    background: none !important;
+}
+
+/*
+ * Navbar
+ */
+
+.uk-navbar {
+    z-index: 900000;
+    padding: 15px 0;
+    border: none;
+    background: #eeeeee;
+    opacity: 0.7;
+}
+
+.uk-navbar .uk-navbar-content,
+.uk-navbar .uk-navbar-brand,
+.uk-navbar .uk-navbar-toggle {
+    height: 40px;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+.uk-navbar .uk-navbar-brand {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    img {
+        margin-right: 6px !important;
+
+    }
+}
+
+.uk-navbar .uk-navbar-nav > li > a {
+    height: 40px;
+    margin: 0;
+    border: none;
+    border-radius: 3px !important;
+    text-shadow: none;
+    font-size: 13px;
+    color: #999999;
+    text-transform: uppercase;
+    &:hover {
+        background:none !important;
+        color: #333;
+    }
+}
+
+.uk-navbar .uk-navbar-nav > li { margin-left: 20px; }
+
+/* Hover */
+.uk-navbar .uk-navbar-nav > li:hover > a,
+.uk-navbar .uk-navbar-nav > li > a:focus,
+.uk-navbar .uk-navbar-nav > li.uk-open > a {
+    border: none;
+    color: #666;
+}
+
+/* Active */
+.uk-navbar .uk-navbar-nav > li.uk-active > a {
+    /*background-color: #2BA3D4;*/
+    color: #555555;
+    border:1px solid #ddd;
+}
+
+/* OnClick */
+.uk-navbar .uk-navbar-nav > li > a:active { background-color: transparent; }
+
+/*
+ * Nav
+ */
+
+.tm-nav > li > a { color: #777; }
+
+/* Hover */
+.tm-nav > li > a:hover,
+.tm-nav > li > a:focus,
+.tm-nav > li.uk-active > a  {
+    color: #444;
+}
+.uk-navbar-nav > li.uk-active > a {
+    background: none;
+}
+
+/* Sub-object: `nav-header` */
+.tm-nav .uk-nav-header {
+    color: #222;
+    font-weight: normal;
+}
+
+/*
+ * Nav
+ */
+
+.tm-subnav > li:nth-child(n+2) { margin-left: 20px; }
