@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-g', 'bower' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose request where is /bower
+5 verbose request registry https://registry.npmjs.org/
+6 verbose request id 127d8994a35050b2
+7 verbose url raw /bower
+8 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+9 verbose url resolved https://registry.npmjs.org/bower
+10 verbose request where is https://registry.npmjs.org/bower
+11 info trying registry request attempt 1 at 14:04:31
+12 verbose etag "7M350FURT0ZH84XW9K8JO8NQB"
+13 http GET https://registry.npmjs.org/bower
+14 http 200 https://registry.npmjs.org/bower
+15 silly registry.get cb [ 200,
+15 silly registry.get   { date: 'Wed, 08 Oct 2014 21:04:32 GMT',
+15 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 silly registry.get     etag: '"BNEPXH85JRVX0PTJ3Z7BEQ39Y"',
+15 silly registry.get     'content-type': 'application/json',
+15 silly registry.get     'cache-control': 'max-age=60',
+15 silly registry.get     'content-length': '105292',
+15 silly registry.get     'accept-ranges': 'bytes',
+15 silly registry.get     via: '1.1 varnish',
+15 silly registry.get     age: '551',
+15 silly registry.get     'x-served-by': 'cache-ord1733-ORD',
+15 silly registry.get     'x-cache': 'HIT',
+15 silly registry.get     'x-cache-hits': '2',
+15 silly registry.get     'x-timer': 'S1412802272.912165,VS0,VE0',
+15 silly registry.get     vary: 'Accept',
+15 silly registry.get     'keep-alive': 'timeout=10, max=50',
+15 silly registry.get     connection: 'Keep-Alive' } ]
+16 info outdated updating [ [ '/usr/local/lib',
+16 info outdated     'bower',
+16 info outdated     '1.3.11',
+16 info outdated     '1.3.12',
+16 info outdated     '1.3.12',
+16 info outdated     'latest' ] ]
+17 verbose install where,what [ '/usr/local/lib', [ 'bower@1.3.12' ] ]
+18 verbose cache add [ 'bower@1.3.12', null ]
+19 verbose cache add name=undefined spec="bower@1.3.12" args=["bower@1.3.12",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'bower@1.3.12',
+20 verbose parsed url   path: 'bower@1.3.12',
+20 verbose parsed url   href: 'bower@1.3.12' }
+21 verbose cache add name="bower" spec="1.3.12" args=["bower","1.3.12"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '1.3.12',
+22 verbose parsed url   path: '1.3.12',
+22 verbose parsed url   href: '1.3.12' }
+23 verbose addNamed [ 'bower', '1.3.12' ]
+24 verbose addNamed [ '1.3.12', '1.3.12' ]
+25 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+26 verbose lock bower@1.3.12 /Users/devanandb/.npm/9819431c-bower-1-3-12.lock
+27 verbose registry.get https://registry.npmjs.org/bower not expired, no request
+28 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+29 verbose lock https://registry.npmjs.org/bower/-/bower-1.3.12.tgz /Users/devanandb/.npm/b05fd70b-npmjs-org-bower-bower-1-3-12-tgz.lock
+30 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
+30 verbose addRemoteTarball   '37de0edb3904baf90aee13384a1a379a05ee214c' ]
+31 info retry fetch attempt 1 at 14:04:32
+32 verbose fetch to= /var/folders/c9/rsyvz2nx1lvd0vqhcwbydqp80000gn/T/npm-47172-pNLexun0/registry.npmjs.org/bower/-/bower-1.3.12.tgz
+33 http GET https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+34 http 200 https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+35 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+36 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+37 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+38 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+39 error Error: EACCES, mkdir '/Users/devanandb/.npm/bower/1.3.12'
+39 error  { [Error: EACCES, mkdir '/Users/devanandb/.npm/bower/1.3.12']
+39 error   errno: 3,
+39 error   code: 'EACCES',
+39 error   path: '/Users/devanandb/.npm/bower/1.3.12' }
+40 error Please try running this command again as root/Administrator.
+41 error System Darwin 14.0.0
+42 error command "node" "/usr/local/bin/npm" "update" "-g" "bower"
+43 error cwd /Users/devanandb/matrix/redpill/designz/designz
+44 error node -v v0.10.32
+45 error npm -v 1.4.28
+46 error path /Users/devanandb/.npm/bower/1.3.12
+47 error code EACCES
+48 error errno 3
+49 error stack Error: EACCES, mkdir '/Users/devanandb/.npm/bower/1.3.12'
+50 verbose exit [ 3, true ]

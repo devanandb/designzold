@@ -3,7 +3,7 @@ angular.module('designz', ['ui.bootstrap', 'ui.utils', 'ngRoute', 'ngAnimate', '
 angular.module('designz').config(function($routeProvider) {
 
     /* Add New Routes Above */
-    $routeProvider.otherwise({redirectTo:'/home'});
+    $routeProvider.otherwise({redirectTo:'/'});
 
 });
 
@@ -19,5 +19,9 @@ angular.module('designz').run(function($rootScope) {
             this.$apply(fn);
         }
     };
+
+    $rootScope.$on('databank-ready', function() {
+        $rootScope.gifts = $rootScope.db.gifts;
+    });
 
 });

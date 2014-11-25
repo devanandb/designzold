@@ -32,19 +32,17 @@
         <script src="pages/pages.js"></script>
         <script src="pages/partial/home/home.js"></script>
         <script src="pages/partial/store/store.js"></script>
+        <script src="directive/databank.js"></script>
         <!-- Add New Component JS Above -->
 
         
-        <ng-include src="'includes/header.html'"></ng-include>  
-
         
-        <div>
-            <div class="container">
+
+        <databank on-ready="go()" files="gifts"></databank>
+        
                 
-                    <div ng-view>
+                    <div class="uk-height-1-1" ng-view>
                     </div>
-            </div>
-        </div>
        
     </body>
 </html>

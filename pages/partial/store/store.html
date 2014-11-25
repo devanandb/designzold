@@ -1,3 +1,5 @@
+<ng-include src="'includes/header-light.html'"></ng-include>
+
 <div ng-controller="StoreCtrl">
 		<div class="store-blk">
 			<div class="uk-container uk-width-6-8 uk-container-center">
@@ -13,32 +15,8 @@
 				    <div class="uk-width-3-10">
 				    	<div class="leftpane" data-uk-sticky="{top:80}">
 				    		<ul class="uk-list uk-list-line">
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
-								</li>
-								<li>
-									<a href="">Lorem ipsum</a>
+								<li ng-repeat="category in store">
+									<a href="">{{category.catname}}</a>
 								</li>
 							</ul>
 				    	</div>
@@ -52,11 +30,12 @@
 				    		<hr>
 				    		<div class="uk-grid">
 				    			<div class="uk-width-1-4" ng-repeat="item in category.items">
-									<div class="uk-panel uk-panel-box">
-									    <div class="uk-panel-teaser">
-									        <img src="images/bghero.jpg" alt="">
-									        <p>{{item.name}}</p>
+									<div class="uk-panel uk-panel-box each-item">
+									    <div class="item-img">
+									        <img ng-src="images/{{item.imgpath}}" alt="">
+									        
 									    </div>
+									    <p>{{item.name}}</p>
 									</div>
 				    			</div>
 				    		</div>
